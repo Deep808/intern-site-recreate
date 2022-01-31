@@ -1,0 +1,64 @@
+.container {
+  padding: 0 3em;
+}
+
+.container .card {
+  margin-bottom: 2em;
+  border: none;
+}
+
+@media only screen and (min-width: 680px) {
+  .container {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0em;
+  }
+  .container .card {
+    width: 100%;
+    padding: 0;
+    margin: 5em;
+    border: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0em;
+  }
+  .container .card {
+    width: 90%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    margin: 0 auto;
+    border: none;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 100%;
+    position: relative;
+    margin: 7em 5em 1em 5em;
+    padding: 5em;
+  }
+  .container .card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    border: none;
+    box-shadow: 0px 0px 31px 7px rgba(138, 138, 138, 0.6);
+    -webkit-box-shadow: 0px 0px 31px 7px rgba(138, 138, 138, 0.6);
+    -moz-box-shadow: 0px 0px 31px 7px rgba(138, 138, 138, 0.6);
+    border-radius: 8px;
+  }
+}
+/*# sourceMappingURL=Details.css.map */

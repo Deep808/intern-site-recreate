@@ -1,0 +1,100 @@
+.portfolio_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portfolio_container .portfolio_heading {
+  font-size: x-large;
+  font-weight: bold;
+  text-align: center;
+  color: #1e40af;
+  margin-top: 3em;
+}
+
+.portfolio_container .portfolio_buttons {
+  margin: 2em auto;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  padding: 1rem;
+}
+
+.portfolio_container .portfolio_buttons button {
+  background-color: #c7bde5;
+  margin: 0.5em;
+  font-size: 15px;
+  color: #1e40af;
+  border-radius: 5px;
+  padding: 5px 10px;
+  -webkit-transition: 0.3s ease-in-out 0.5ms;
+  transition: 0.3s ease-in-out 0.5ms;
+}
+
+.portfolio_container .portfolio_buttons button:hover {
+  background-color: #1e40af;
+  color: white;
+}
+
+@media only screen and (min-width: 680px) {
+  .portfolio_container {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .portfolio_container .portfolio_heading {
+    font-size: 1.7em;
+  }
+  .portfolio_container .portfolio_buttons {
+    width: 70%;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+    padding: 1rem;
+  }
+  .portfolio_container .portfolio_cards {
+    display: -ms-grid;
+    display: grid;
+    grid-column: auto;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .portfolio_container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .portfolio_container .portfolio_heading {
+    font-size: 3em;
+    margin-bottom: 1em;
+  }
+  .portfolio_container .portfolio_buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+  .portfolio_container .portfolio_cards {
+    display: -ms-grid;
+    display: grid;
+    grid-column: auto;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=Portfolio.css.map */

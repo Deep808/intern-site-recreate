@@ -1,0 +1,71 @@
+.work_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (min-width: 680px) {
+  .work_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .work_container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    z-index: -1;
+  }
+  .spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: -5;
+  }
+  .layer1 {
+    background-image: url("../../public/images/blue-waves.svg");
+  }
+  .spacer2 {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+  }
+  .layer2 {
+    background-image: url("../../public/images/blue-waves2.svg");
+  }
+  .steps {
+    position: absolute;
+    left: 30%;
+    aspect-ratio: 960/675;
+    width: 36%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+  }
+  .step-layer {
+    background-image: url("../../public/images/steps.svg");
+  }
+}
+/*# sourceMappingURL=Work.css.map */

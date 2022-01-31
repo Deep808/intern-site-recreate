@@ -1,0 +1,180 @@
+.nav_container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #4849e2;
+  z-index: 50;
+}
+
+.nav_container .logo_wrapper {
+  background: white;
+}
+
+.nav_container .menu_icon {
+  width: 3em;
+  height: 3em;
+  color: white;
+  cursor: pointer;
+}
+
+.nav_container .nav_open {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: 0;
+  top: 0;
+  background-color: #1e40af;
+  height: 100vh;
+  width: 50%;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.nav_container .close_icon {
+  width: 3em;
+  height: 3em;
+  color: white;
+  float: right;
+  cursor: pointer;
+  display: block;
+  margin: 1em;
+  z-index: 50;
+}
+
+.nav_container .nav_open > p {
+  color: #e2e2e2;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.5em;
+  margin: 1em;
+  border-radius: 0.5em;
+}
+
+.nav_container .nav_open > p:hover {
+  background-color: #363636;
+}
+
+.nav_container .nav_items {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: 0;
+  top: 0;
+  background-color: #1e40af;
+  height: 100vh;
+  width: 50%;
+  z-index: 2;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.nav_container .nav_items .close_icon {
+  width: 3em;
+  height: 3em;
+  color: white;
+  float: right;
+  cursor: pointer;
+  display: block;
+  margin: 1em;
+  z-index: 50;
+}
+
+.nav_container .nav_items > p {
+  color: #e2e2e2;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.5em;
+  margin: 1em;
+  border-radius: 0.5em;
+}
+
+.nav_container .nav_items > p:hover {
+  background-color: #363636;
+}
+
+@media only screen and (min-width: 1024px) {
+  .menu_icon {
+    display: none;
+  }
+  .nav_container {
+    position: unset;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1em 3em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: none;
+    z-index: 50;
+  }
+  .nav_container .nav_items {
+    position: unset;
+    width: 100%;
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: auto;
+    height: auto;
+    background: none;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .nav_container .nav_items .close_icon {
+    display: none;
+  }
+  .nav_container .nav_items > p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #260eff;
+  }
+  .nav_container .nav_items > p:hover {
+    background: none;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+  }
+  .nav_container .close_icon {
+    display: none;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */
